@@ -7,7 +7,7 @@ html, body {
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
-  background: #aaa;
+  background: rgb(182, 9, 9);
   color: #333;
   /* I'll give you this one for free lol */
   display: flex;
@@ -16,10 +16,14 @@ body {
 }
 
 .modal {
-  background: white;
+  background: rgb(23, 132, 49);
   width: 480px;
+  /* border-radius causes the smoothed edges */
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  gap: 16px;
+  padding: 16px;
 }
 
 .icon {
@@ -33,6 +37,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
 
 .close-button {
@@ -46,6 +60,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+}
+
+.text {
+  margin-bottom: 20px;
 }
 
 button {
